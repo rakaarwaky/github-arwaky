@@ -1,4 +1,4 @@
-# Install GitHub MCP Server in Cursor
+# Install GitHub Arwaky in Cursor
 
 ## Prerequisites
 

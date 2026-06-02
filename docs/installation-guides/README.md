@@ -1,6 +1,6 @@
-# GitHub MCP Server Installation Guides
+# GitHub Arwaky Installation Guides
 
-This directory contains detailed installation instructions for the GitHub MCP Server across different host applications and IDEs. Choose the guide that matches your development environment.
+This directory contains detailed installation instructions for the GitHub Arwaky across different host applications and IDEs. Choose the guide that matches your development environment.
 
 ## Installation Guides by Host Application
 - **[Copilot CLI](install-copilot-cli.md)** - Installation guide for GitHub Copilot CLI
@@ -23,7 +23,7 @@ This directory contains detailed installation instructions for the GitHub MCP Se
 | Copilot Coding Agent | ✅ | ✅ Full (on by default; no auth needed) | Any _paid_ copilot license | Default on |
 | Copilot in Visual Studio | ✅ | ✅ Full (OAuth + PAT) | Local: Docker or Go build, GitHub PAT<br>Remote: Visual Studio 17.14+ | Easy |
 | Copilot in JetBrains | ✅ | ✅ Full (OAuth + PAT) | Local: Docker or Go build, GitHub PAT<br>Remote: JetBrains Copilot Extension v1.5.53+ | Easy |
-| Claude Code | ✅ | ✅ PAT + ❌ No OAuth| GitHub MCP Server binary or remote URL, GitHub PAT | Easy |
+| Claude Code | ✅ | ✅ PAT + ❌ No OAuth| GitHub Arwaky binary or remote URL, GitHub PAT | Easy |
 | Claude Desktop | ✅ | ✅ PAT + ❌ No OAuth | Docker or Go build, GitHub PAT | Moderate |
 | Cline | ✅ | ✅ PAT + ❌ No OAuth | Docker or Go build, GitHub PAT | Easy |
 | Cursor | ✅ | ✅ PAT + ❌ No OAuth | Docker or Go build, GitHub PAT | Easy |
@@ -41,7 +41,7 @@ This directory contains detailed installation instructions for the GitHub MCP Se
 
 ## Installation Methods
 
-The GitHub MCP Server can be installed using several methods. **Docker is the most popular and recommended approach** for most users, but alternatives are available depending on your needs:
+The GitHub Arwaky can be installed using several methods. **Docker is the most popular and recommended approach** for most users, but alternatives are available depending on your needs:
 
 ### 🐳 Docker (Most Common & Recommended)
 - **Pros**: No local build required, consistent environment, easy updates, works across all platforms
@@ -62,7 +62,7 @@ The GitHub MCP Server can be installed using several methods. **Docker is the mo
 - **Build command**: `go build -o github-arwaky cmd/github-arwaky/main.go`
 - **Best for**: Developers who want the latest features or need custom modifications
 
-### Important Notes on the GitHub MCP Server
+### Important Notes on the GitHub Arwaky
 
 - **Docker Image**: The official Docker image is now `ghcr.io/github/github-arwaky`
 - **npm Package**: The npm package @modelcontextprotocol/server-github is no longer supported as of April 2025

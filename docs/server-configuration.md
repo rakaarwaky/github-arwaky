@@ -3,7 +3,7 @@
 This guide helps you choose the right configuration for your use case and shows you how to apply it. For the complete reference of available toolsets and tools, see the [README](../README.md#tool-configuration).
 
 ## Quick Reference
-We currently support the following ways in which the GitHub MCP Server can be configured: 
+We currently support the following ways in which the GitHub Arwaky can be configured: 
 
 | Configuration | Remote Server | Local Server |
 |---------------|---------------|--------------|

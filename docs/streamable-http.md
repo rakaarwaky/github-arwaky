@@ -1,6 +1,6 @@
 # Streamable HTTP Server
 
-The Streamable HTTP mode enables the GitHub MCP Server to run as an HTTP service, allowing clients to connect via standard HTTP protocols. This mode is ideal for deployment scenarios where stdio transport isn't suitable, such as reverse proxy setups, containerized environments, or distributed architectures.
+The Streamable HTTP mode enables the GitHub Arwaky to run as an HTTP service, allowing clients to connect via standard HTTP protocols. This mode is ideal for deployment scenarios where stdio transport isn't suitable, such as reverse proxy setups, containerized environments, or distributed architectures.
 
 ## Features
 
@@ -44,7 +44,7 @@ The OAuth protected resource metadata's `resource` attribute will be populated w
 
 ```json
 {
-  "resource_name": "GitHub MCP Server",
+  "resource_name": "GitHub Arwaky",
   "resource": "https://myserver.com/mcp",
   "authorization_servers": [
     "https://github.com/login/oauth"

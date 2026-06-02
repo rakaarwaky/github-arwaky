@@ -1,8 +1,8 @@
-# Remote GitHub MCP Server 🚀
+# Remote GitHub Arwaky 🚀
 
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Server-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=github&config=%7B%22type%22%3A%20%22http%22%2C%22url%22%3A%20%22https%3A%2F%2Fapi.githubcopilot.com%2Fmcp%2F%22%7D) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install_Server-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=github&config=%7B%22type%22%3A%20%22http%22%2C%22url%22%3A%20%22https%3A%2F%2Fapi.githubcopilot.com%2Fmcp%2F%22%7D&quality=insiders)
 
-Easily connect to the GitHub MCP Server using the hosted version – no local setup or runtime required.
+Easily connect to the GitHub Arwaky using the hosted version – no local setup or runtime required.
 
 **URL:** https://api.githubcopilot.com/mcp/
 
@@ -14,7 +14,7 @@ The remote server has [additional tools](#toolsets-only-available-in-the-remote-
 
 ## Remote MCP Toolsets
 
-Below is a table of available toolsets for the remote GitHub MCP Server. Each toolset is provided as a distinct URL so you can mix and match to create the perfect combination of tools for your use-case. Add `/readonly` to the end of any URL to restrict the tools in the toolset to only those that enable read access. We also provide the option to use [headers](#headers) instead.
+Below is a table of available toolsets for the remote GitHub Arwaky. Each toolset is provided as a distinct URL so you can mix and match to create the perfect combination of tools for your use-case. Add `/readonly` to the end of any URL to restrict the tools in the toolset to only those that enable read access. We also provide the option to use [headers](#headers) instead.
 
 <!-- START AUTOMATED TOOLSETS -->
 | Name | Description | API URL | 1-Click Install (VS Code) | Read-only Link | 1-Click Read-only Install (VS Code) |
@@ -42,7 +42,7 @@ Below is a table of available toolsets for the remote GitHub MCP Server. Each to
 
 ### Additional _Remote_ Server Toolsets
 
-These toolsets are only available in the remote GitHub MCP Server and are not included in the local MCP server.
+These toolsets are only available in the remote GitHub Arwaky and are not included in the local MCP server.
 
 <!-- START AUTOMATED REMOTE TOOLSETS -->
 | Name | Description | API URL | 1-Click Install (VS Code) | Read-only Link | 1-Click Read-only Install (VS Code) |
@@ -89,7 +89,7 @@ Example:
 
 ### Insiders Mode
 
-The remote GitHub MCP Server offers an insiders version with early access to new features and experimental tools. You can enable insiders mode in two ways:
+The remote GitHub Arwaky offers an insiders version with early access to new features and experimental tools. You can enable insiders mode in two ways:
 
 1. **Via URL path** - Append `/insiders` to the URL:
 

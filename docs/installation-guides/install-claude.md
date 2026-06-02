@@ -1,4 +1,4 @@
-# Install GitHub MCP Server in Claude Applications
+# Install GitHub Arwaky in Claude Applications
 
 ## Claude Code CLI
 

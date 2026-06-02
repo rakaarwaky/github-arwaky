@@ -1,10 +1,10 @@
-# Install GitHub MCP Server in Cline
+# Install GitHub Arwaky in Cline
 
 [Cline](https://github.com/cline/cline) is an AI coding assistant that runs in VS Code-compatible editors (VS Code, Cursor, Windsurf, etc.). For general setup information (prerequisites, Docker installation, security best practices), see the [Installation Guides README](./README.md).
 
 ## Remote Server
 
-Cline stores MCP settings in `cline_mcp_settings.json`. To edit it, click the Cline icon in your editor's sidebar, open the menu in the top right corner of the Cline panel, and select **"MCP Servers"**. You can add a remote server through the **"Remote Servers"** tab, or click **"Configure MCP Servers"** to edit the JSON directly.
+Cline stores MCP settings in `cline_mcp_settings.json`. To edit it, click the Cline icon in your editor's sidebar, open the menu in the top right corner of the Cline panel, and select **"MCP Arwaky"**. You can add a remote server through the **"Remote Servers"** tab, or click **"Configure MCP Arwaky"** to edit the JSON directly.
 
 ```json
 {
@@ -28,7 +28,7 @@ Replace `YOUR_GITHUB_PAT` with your [GitHub Personal Access Token](https://githu
 
 ## Local Server (Docker)
 
-1. Click the Cline icon in your editor's sidebar (or open the command palette and search for "Cline"), then click the **MCP Servers** icon (server stack icon at the top of the Cline panel), and click **"Configure MCP Servers"** to open `cline_mcp_settings.json`.
+1. Click the Cline icon in your editor's sidebar (or open the command palette and search for "Cline"), then click the **MCP Arwaky** icon (server stack icon at the top of the Cline panel), and click **"Configure MCP Arwaky"** to open `cline_mcp_settings.json`.
 2. Add the configuration below, replacing `YOUR_GITHUB_PAT` with your [GitHub Personal Access Token](https://github.com/settings/tokens).
 
 ```json

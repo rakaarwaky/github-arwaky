@@ -1,4 +1,4 @@
-# Install GitHub MCP Server in Windsurf
+# Install GitHub Arwaky in Windsurf
 
 ## Prerequisites
 1. Windsurf IDE installed (latest version)
@@ -56,7 +56,7 @@ Windsurf supports Streamable HTTP servers with a `serverUrl` field:
 ### Via Plugin Store
 1. Open Windsurf and navigate to Cascade
 2. Click the **Plugins** icon or **hammer icon** (🔨)
-3. Search for "GitHub MCP Server"
+3. Search for "GitHub Arwaky"
 4. Click **Install** and enter your PAT when prompted
 5. Click **Refresh** (🔄)
 

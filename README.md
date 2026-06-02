@@ -1,8 +1,8 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/github/github-arwaky)](https://goreportcard.com/report/github.com/github/github-arwaky)
 
-# GitHub MCP Server
+# GitHub Arwaky
 
-The GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows. All through natural language interactions.
+The GitHub Arwaky connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows. All through natural language interactions.
 
 ### Use Cases
 
@@ -16,11 +16,11 @@ Built for developers who want to connect their AI tools to GitHub context and ca
 
 ---
 
-## Remote GitHub MCP Server
+## Remote GitHub Arwaky
 
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Server-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=github&config=%7B%22type%22%3A%20%22http%22%2C%22url%22%3A%20%22https%3A%2F%2Fapi.githubcopilot.com%2Fmcp%2F%22%7D) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install_Server-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=github&config=%7B%22type%22%3A%20%22http%22%2C%22url%22%3A%20%22https%3A%2F%2Fapi.githubcopilot.com%2Fmcp%2F%22%7D&quality=insiders)
 
-The remote GitHub MCP Server is hosted by GitHub and provides the easiest method for getting up and running. If your MCP host does not support remote MCP servers, don't worry! You can use the [local version of the GitHub MCP Server](https://github.com/github/github-arwaky?tab=readme-ov-file#local-github-arwaky) instead.
+The remote GitHub Arwaky is hosted by GitHub and provides the easiest method for getting up and running. If your MCP host does not support remote MCP servers, don't worry! You can use the [local version of the GitHub Arwaky](https://github.com/github/github-arwaky?tab=readme-ov-file#local-github-arwaky) instead.
 
 ### Prerequisites
 
@@ -95,7 +95,7 @@ Alternatively, to manually configure VS Code, choose the appropriate JSON block 
 
 #### Toolset configuration
 
-See [Remote Server Documentation](docs/remote-server.md) for full details on remote server configuration, toolsets, headers, and advanced usage. This file provides comprehensive instructions and examples for connecting, customizing, and installing the remote GitHub MCP Server in VS Code and other MCP hosts.
+See [Remote Server Documentation](docs/remote-server.md) for full details on remote server configuration, toolsets, headers, and advanced usage. This file provides comprehensive instructions and examples for connecting, customizing, and installing the remote GitHub Arwaky in VS Code and other MCP hosts.
 
 When no toolsets are specified, [default toolsets](#default-toolset) are used.
 
@@ -172,7 +172,7 @@ GitHub Enterprise Server does not support remote server hosting. Please refer to
 
 ---
 
-## Local GitHub MCP Server
+## Local GitHub Arwaky
 
 [![Install with Docker in VS Code](https://img.shields.io/badge/VS_Code-Install_Server-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=github&inputs=%5B%7B%22id%22%3A%22github_token%22%2C%22type%22%3A%22promptString%22%2C%22description%22%3A%22GitHub%20Personal%20Access%20Token%22%2C%22password%22%3Atrue%7D%5D&config=%7B%22command%22%3A%22docker%22%2C%22args%22%3A%5B%22run%22%2C%22-i%22%2C%22--rm%22%2C%22-e%22%2C%22GITHUB_PERSONAL_ACCESS_TOKEN%22%2C%22ghcr.io%2Fgithub%2Fgithub-arwaky%22%5D%2C%22env%22%3A%7B%22GITHUB_PERSONAL_ACCESS_TOKEN%22%3A%22%24%7Binput%3Agithub_token%7D%22%7D%7D) [![Install with Docker in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install_Server-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=github&inputs=%5B%7B%22id%22%3A%22github_token%22%2C%22type%22%3A%22promptString%22%2C%22description%22%3A%22GitHub%20Personal%20Access%20Token%22%2C%22password%22%3Atrue%7D%5D&config=%7B%22command%22%3A%22docker%22%2C%22args%22%3A%5B%22run%22%2C%22-i%22%2C%22--rm%22%2C%22-e%22%2C%22GITHUB_PERSONAL_ACCESS_TOKEN%22%2C%22ghcr.io%2Fgithub%2Fgithub-arwaky%22%5D%2C%22env%22%3A%7B%22GITHUB_PERSONAL_ACCESS_TOKEN%22%3A%22%24%7Binput%3Agithub_token%7D%22%7D%7D&quality=insiders)
 
@@ -396,7 +396,7 @@ github-arwaky tool-search "issue" --max-results 5
 
 ## Tool Configuration
 
-The GitHub MCP Server supports enabling or disabling specific groups of functionalities via the `--toolsets` flag. This allows you to control which GitHub API capabilities are available to your AI tools. Enabling only the toolsets that you need can help the LLM with tool choice and reduce the context size.
+The GitHub Arwaky supports enabling or disabling specific groups of functionalities via the `--toolsets` flag. This allows you to control which GitHub API capabilities are available to your AI tools. Enabling only the toolsets that you need can help the LLM with tool choice and reduce the context size.
 
 _Toolsets are not limited to Tools. Relevant MCP Resources and Prompts are also included where applicable._
 
@@ -527,7 +527,7 @@ GITHUB_TOOLSETS="default,stargazers" ./github-arwaky
 
 ### Insiders Mode
 
-The local GitHub MCP Server offers an insiders version with early access to new features and experimental tools.
+The local GitHub Arwaky offers an insiders version with early access to new features and experimental tools.
 
 1. **Using Command Line Argument**:
 
@@ -578,7 +578,7 @@ The following sets of tools are available:
 | <picture><source media="(prefers-color-scheme: dark)" srcset="pkg/octicons/icons/people-dark.png"><source media="(prefers-color-scheme: light)" srcset="pkg/octicons/icons/people-light.png"><img src="pkg/octicons/icons/people-light.png" width="20" height="20" alt="people"></picture> | `users` | GitHub User related tools |
 <!-- END AUTOMATED TOOLSETS -->
 
-### Additional Toolsets in Remote GitHub MCP Server
+### Additional Toolsets in Remote GitHub Arwaky
 
 | Toolset                 | Description                                                   |
 | ----------------------- | ------------------------------------------------------------- |
@@ -1391,7 +1391,7 @@ The following sets of tools are available:
 </details>
 <!-- END AUTOMATED TOOLS -->
 
-### Additional Tools in Remote GitHub MCP Server
+### Additional Tools in Remote GitHub Arwaky
 
 <details>
 
@@ -1429,7 +1429,7 @@ The following sets of tools are available:
 
 ## Dynamic Tool Discovery
 
-**Note**: This feature is currently in beta and is not available in the Remote GitHub MCP Server. Please test it out and let us know if you encounter any issues.
+**Note**: This feature is currently in beta and is not available in the Remote GitHub Arwaky. Please test it out and let us know if you encounter any issues.
 
 Instead of starting with all tools enabled, you can turn on dynamic toolset discovery. Dynamic toolsets allow the MCP host to list and enable toolsets in response to a user prompt. This should help to avoid situations where the model gets confused by the sheer number of tools available.
 

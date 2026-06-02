@@ -1,6 +1,6 @@
 # Toolsets and Icons
 
-This document explains how to work with toolsets and icons in the GitHub MCP Server.
+This document explains how to work with toolsets and icons in the GitHub Arwaky.
 
 ## Toolset Overview
 
@@ -37,7 +37,7 @@ Browse the [Octicon gallery](https://primer.style/foundations/icons) and select 
 Icons are defined in `pkg/octicons/required_icons.txt`, which is the single source of truth for which icons should be embedded:
 
 ```
-# Required icons for the GitHub MCP Server
+# Required icons for the GitHub Arwaky
 # Add new icons below (one per line)
 repo
 issue-opened
@@ -95,7 +95,7 @@ This updates icons in:
 
 ## Remote-Only Toolsets
 
-Some toolsets are only available in the remote GitHub MCP Server (hosted at `api.githubcopilot.com`). These are defined in `pkg/github/tools.go` with their icons, but are not registered with the local server:
+Some toolsets are only available in the remote GitHub Arwaky (hosted at `api.githubcopilot.com`). These are defined in `pkg/github/tools.go` with their icons, but are not registered with the local server:
 
 ```go
 // Remote-only toolsets

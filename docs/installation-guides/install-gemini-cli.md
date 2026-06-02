@@ -1,4 +1,4 @@
-# Install GitHub MCP Server in Google Gemini CLI
+# Install GitHub Arwaky in Google Gemini CLI
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ GITHUB_MCP_PAT=your_token_here
 
 </details>
 
-## GitHub MCP Server Configuration
+## GitHub Arwaky Configuration
 
 MCP servers for Gemini CLI are configured in its settings JSON under an `mcpServers` key.
 

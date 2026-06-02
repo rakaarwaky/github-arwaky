@@ -1,4 +1,4 @@
-# Install GitHub MCP Server in Copilot CLI
+# Install GitHub Arwaky in Copilot CLI
 
 The GitHub MCP server comes pre-installed in Copilot CLI, with read-only tools enabled by default.
 

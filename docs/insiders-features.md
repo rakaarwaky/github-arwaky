@@ -1,6 +1,6 @@
 # Insiders Features
 
-Insiders Mode gives you access to experimental features in the GitHub MCP Server. These features may change, evolve, or be removed based on community feedback.
+Insiders Mode gives you access to experimental features in the GitHub Arwaky. These features may change, evolve, or be removed based on community feedback.
 
 We created this mode to have a way to roll out experimental features and collect feedback. So if you are using Insiders, please don't hesitate to share your feedback with us! 
 

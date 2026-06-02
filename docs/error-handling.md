@@ -1,10 +1,10 @@
 # Error Handling
 
-This document describes the error handling patterns used in the GitHub MCP Server, specifically how we handle GitHub API errors and avoid direct use of mcp-go error types.
+This document describes the error handling patterns used in the GitHub Arwaky, specifically how we handle GitHub API errors and avoid direct use of mcp-go error types.
 
 ## Overview
 
-The GitHub MCP Server implements a custom error handling approach that serves two primary purposes:
+The GitHub Arwaky implements a custom error handling approach that serves two primary purposes:
 
 1. **Tool Response Generation**: Return appropriate MCP tool error responses to clients
 2. **Middleware Inspection**: Store detailed error information in the request context for middleware analysis

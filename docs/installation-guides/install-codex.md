@@ -1,4 +1,4 @@
-# Install GitHub MCP Server in OpenAI Codex
+# Install GitHub Arwaky in OpenAI Codex
 
 ## Prerequisites
 

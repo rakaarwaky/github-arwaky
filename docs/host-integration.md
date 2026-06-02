@@ -9,7 +9,7 @@ The goal is to explain the architecture at a high-level, define key requirements
 ## Table of Contents
 
 - [Understanding MCP Architecture](#understanding-mcp-architecture)
-- [Connecting to the Remote GitHub MCP Server](#connecting-to-the-remote-github-arwaky)
+- [Connecting to the Remote GitHub Arwaky](#connecting-to-the-remote-github-arwaky)
   - [Authentication and Authorization](#authentication-and-authorization)
   - [OAuth Support on GitHub](#oauth-support-on-github)
   - [Create an OAuth-enabled App Using the GitHub UI](#create-an-oauth-enabled-app-using-the-github-ui)
@@ -27,7 +27,7 @@ The Model Context Protocol (MCP) enables seamless communication between your app
 
 ### High-level Architecture
 
-The diagram below illustrates how a single client application can connect to multiple MCP Servers, each providing access to a unique set of resources.  Notice that some MCP Servers are running locally (side-by-side with the client application) while others are hosted remotely.  GitHub's MCP offerings are available to run either locally or remotely.
+The diagram below illustrates how a single client application can connect to multiple MCP Arwaky, each providing access to a unique set of resources.  Notice that some MCP Arwaky are running locally (side-by-side with the client application) while others are hosted remotely.  GitHub's MCP offerings are available to run either locally or remotely.
 
 ```mermaid
 flowchart LR
@@ -62,7 +62,7 @@ flowchart LR
 - **MCP Client**: A component within your client application that maintains a 1:1 connection with a single MCP server.
 - **MCP Server**: A service that provides access to a specific set of tools.
   - **Local MCP Server**: An MCP Server running locally, side-by-side with the Application.
-  - **Remote MCP Server**: An MCP Server running remotely, accessed via the internet.  Most Remote MCP Servers require authentication via OAuth.
+  - **Remote MCP Server**: An MCP Server running remotely, accessed via the internet.  Most Remote MCP Arwaky require authentication via OAuth.
 
 For more detail, see the [official MCP specification](https://modelcontextprotocol.io/specification/2025-06-18).
 
@@ -71,17 +71,17 @@ For more detail, see the [official MCP specification](https://modelcontextprotoc
 
 ---
 
-## Connecting to the Remote GitHub MCP Server
+## Connecting to the Remote GitHub Arwaky
 
 ### Authentication and Authorization
 
-GitHub MCP Servers require a valid access token in the `Authorization` header.  This is true for both the Local GitHub MCP Server and the Remote GitHub MCP Server.
+GitHub Arwakys require a valid access token in the `Authorization` header.  This is true for both the Local GitHub Arwaky and the Remote GitHub Arwaky.
 
-For the Remote GitHub MCP Server, the recommended way to obtain a valid access token is to ensure your client application supports [OAuth 2.1](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-13).  It should be noted, however, that you may also supply any valid access token. For example, you may supply a pre-generated Personal Access Token (PAT).
+For the Remote GitHub Arwaky, the recommended way to obtain a valid access token is to ensure your client application supports [OAuth 2.1](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-13).  It should be noted, however, that you may also supply any valid access token. For example, you may supply a pre-generated Personal Access Token (PAT).
 
 
 > [!IMPORTANT]
-> The Remote GitHub MCP Server itself does not provide Authentication services.
+> The Remote GitHub Arwaky itself does not provide Authentication services.
 > Your client application must obtain valid GitHub access tokens through one of the supported methods.
 
 The expected flow for obtaining a valid access token via OAuth is depicted in the [MCP Specification](https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization#authorization-flow-steps).  For convenience, we've embedded a copy of the authorization flow below.  Please study it carefully as the remainder of this document is written with this flow in mind.
@@ -124,7 +124,7 @@ sequenceDiagram
 ```
 
 > [!NOTE]
-> Dynamic Client Registration is NOT supported by Remote GitHub MCP Server at this time.
+> Dynamic Client Registration is NOT supported by Remote GitHub Arwaky at this time.
 
 
 #### OAuth Support on GitHub
@@ -160,7 +160,7 @@ For **GitHub Apps**, details on initiating the OAuth flow from a client applicat
 For **OAuth Apps**, details on initiating the OAuth flow from a client application are described in detail [here](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#web-application-flow).
 
 > [!IMPORTANT]
-> For endpoint discovery, be sure to honor the [`WWW-Authenticate` information provided](https://modelcontextprotocol.io/specification/draft/basic/authorization#authorization-server-location) by the Remote GitHub MCP Server rather than relying on hard-coded endpoints like `https://github.com/login/oauth/authorize`.
+> For endpoint discovery, be sure to honor the [`WWW-Authenticate` information provided](https://modelcontextprotocol.io/specification/draft/basic/authorization#authorization-server-location) by the Remote GitHub Arwaky rather than relying on hard-coded endpoints like `https://github.com/login/oauth/authorize`.
 
 
 ### Handling Organization Access Restrictions

@@ -1,4 +1,4 @@
-# Policies & Governance for the GitHub MCP Server
+# Policies & Governance for the GitHub Arwaky
 
 Organizations and enterprises have several existing control mechanisms for the GitHub MCP server on GitHub.com:
 - MCP servers in Copilot Policy
@@ -8,20 +8,20 @@ Organizations and enterprises have several existing control mechanisms for the G
 - Personal Access Token (PAT) policies
 - SSO Enforcement
 
-This document outlines how these policies apply to different deployment modes, authentication methods, and host applications – while providing guidance for managing GitHub MCP Server access across your organization.
+This document outlines how these policies apply to different deployment modes, authentication methods, and host applications – while providing guidance for managing GitHub Arwaky access across your organization.
 
-## How the GitHub MCP Server Works
+## How the GitHub Arwaky Works
 
-The GitHub MCP Server provides access to GitHub resources and capabilities through a standardized protocol, with flexible deployment and authentication options tailored to different use cases. It supports two deployment modes, both built on the same underlying codebase.
+The GitHub Arwaky provides access to GitHub resources and capabilities through a standardized protocol, with flexible deployment and authentication options tailored to different use cases. It supports two deployment modes, both built on the same underlying codebase.
 
-### 1. Local GitHub MCP Server
+### 1. Local GitHub Arwaky
 * **Runs:** Locally alongside your IDE or application
 * **Authentication & Controls:** Requires Personal Access Tokens (PATs). Users must generate and configure a PAT to connect. Managed via [PAT policies](https://docs.github.com/organizations/managing-programmatic-access-to-your-organization/setting-a-personal-access-token-policy-for-your-organization#restricting-access-by-personal-access-tokens).
   * Can optionally use GitHub App installation tokens when embedded in a GitHub App-based tool (rare).
  
 **Supported SKUs:** Can be used with GitHub Enterprise Server (GHES) and GitHub Enterprise Cloud (GHEC).
 
-### 2. Remote GitHub MCP Server
+### 2. Remote GitHub Arwaky
 * **Runs:** As a hosted service accessed over the internet
 * **Authentication & Controls:** (determined by the chosen authentication method)
   * **GitHub App Installation Tokens:** Uses a signed JWT to request installation access tokens (similar to the OAuth 2.0 client credentials flow) to operate as the application itself. Provides granular control via [installation](https://docs.github.com/apps/using-github-apps/installing-a-github-app-from-a-third-party#requirements-to-install-a-github-app), [permissions](https://docs.github.com/apps/creating-github-apps/registering-a-github-app/choosing-permissions-for-a-github-app) and [repository access controls](https://docs.github.com/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#modifying-repository-access).
@@ -31,11 +31,11 @@ The GitHub MCP Server provides access to GitHub resources and capabilities throu
 
 **Supported Platforms:** Currently available only on GitHub Enterprise Cloud (GHEC). Remote hosting for GHES is not supported at this time.
 
-> **Note:** This does not apply to the Local GitHub MCP Server, which uses PATs and does not rely on GitHub App installations.
+> **Note:** This does not apply to the Local GitHub Arwaky, which uses PATs and does not rely on GitHub App installations.
 
 #### Enterprise Install Considerations
 
-- When using the Remote GitHub MCP Server, if authenticating with OAuth instead of PAT, each host application must have a registered GitHub App (or OAuth App) to authenticate on behalf of the user.
+- When using the Remote GitHub Arwaky, if authenticating with OAuth instead of PAT, each host application must have a registered GitHub App (or OAuth App) to authenticate on behalf of the user.
 - Enterprises may choose to install these apps in multiple organizations (e.g., per team or department) to scope access narrowly, or at the enterprise level to centralize access control across all child organizations. 
 - Enterprise installation is only supported for GitHub Apps. OAuth Apps can only be installed on a per organization basis in multi-org enterprises.
 
@@ -69,26 +69,26 @@ Access is always constrained by GitHub's public API permission model and the aut
 
 ## Control Mechanisms
 
-### 1. Copilot Editors (first-party) → MCP Servers in Copilot Policy
+### 1. Copilot Editors (first-party) → MCP Arwaky in Copilot Policy
 
 * **Policy:** MCP servers in Copilot
 * **Location:** Enterprise/Org → Policies → Copilot
-* **What it controls:** When disabled, **completely blocks all GitHub MCP Server access** (both remote and local) for affected Copilot editors. Currently applies to VS Code and Copilot Coding Agent, with more Copilot editors expected to migrate to this policy over time.
-* **Impact when disabled:** Host applications governed by this policy cannot connect to the GitHub MCP Server through any authentication method (OAuth, PAT, or GitHub App).
+* **What it controls:** When disabled, **completely blocks all GitHub Arwaky access** (both remote and local) for affected Copilot editors. Currently applies to VS Code and Copilot Coding Agent, with more Copilot editors expected to migrate to this policy over time.
+* **Impact when disabled:** Host applications governed by this policy cannot connect to the GitHub Arwaky through any authentication method (OAuth, PAT, or GitHub App).
 * **What it does NOT affect:**
   * MCP support in Copilot on IDEs that are still in public preview (Visual Studio, JetBrains, Xcode, Eclipse)
   * Third-party IDE or host apps (like Claude, Cursor, Windsurf) not governed by GitHub's Copilot policies
   * Community-authored MCP servers using GitHub's public APIs
 
-> **Important:** This policy provides comprehensive control over GitHub MCP Server access in Copilot editors. When disabled, users in affected applications will not be able to use the GitHub MCP Server regardless of deployment mode (remote or local) or authentication method.
+> **Important:** This policy provides comprehensive control over GitHub Arwaky access in Copilot editors. When disabled, users in affected applications will not be able to use the GitHub Arwaky regardless of deployment mode (remote or local) or authentication method.
 
 #### Temporary: Copilot Editor Preview Policy
 
 * **Policy:** Editor Preview Features  
 * **Status:** Being phased out as editors migrate to the "MCP servers in Copilot" policy above, and once the Remote GitHub MCP server goes GA
-* **What it controls:** When disabled, prevents remaining Copilot editors from using the Remote GitHub MCP Server through OAuth connections in all first-party and third-party host applications (does not affect local deployments or PAT authentication)
+* **What it controls:** When disabled, prevents remaining Copilot editors from using the Remote GitHub Arwaky through OAuth connections in all first-party and third-party host applications (does not affect local deployments or PAT authentication)
 
-> **Note:** As Copilot editors migrate from the "Copilot Editor Preview" policy to the "MCP servers in Copilot" policy, the scope of control becomes more centralized, blocking both remote and local GitHub MCP Server access when disabled. Access in third-party hosts is governed separately by OAuth App, GitHub App, and PAT policies.
+> **Note:** As Copilot editors migrate from the "Copilot Editor Preview" policy to the "MCP servers in Copilot" policy, the scope of control becomes more centralized, blocking both remote and local GitHub Arwaky access when disabled. Access in third-party hosts is governed separately by OAuth App, GitHub App, and PAT policies.
 
 ### 2. Third-Party Host Apps (e.g., Claude, Cursor, Windsurf) → OAuth App or GitHub App Controls
 
@@ -134,7 +134,7 @@ Access is always constrained by GitHub's public API permission model and the aut
 
 ## Current Limitations
 
-While the GitHub MCP Server provides dynamic tooling and capabilities, the following enterprise governance features are not yet available:
+While the GitHub Arwaky provides dynamic tooling and capabilities, the following enterprise governance features are not yet available:
 
 ### Single Enterprise/Organization-Level Toggle
 
@@ -213,4 +213,4 @@ Until those arrive, teams can continue to monitor MCP activity through existing 
 
 Open an [issue in the github-arwaky repository](https://github.com/github/github-arwaky/issues) with the label "policies & governance" attached.
 
-This document reflects GitHub MCP Server policies as of July 2025. Policies and capabilities continue to evolve based on customer feedback and security best practices.
+This document reflects GitHub Arwaky policies as of July 2025. Policies and capabilities continue to evolve based on customer feedback and security best practices.

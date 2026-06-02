@@ -1,4 +1,4 @@
-# Install GitHub MCP Server in Rovo Dev CLI
+# Install GitHub Arwaky in Rovo Dev CLI
 
 ## Prerequisites
 

@@ -1,4 +1,4 @@
-# GitHub MCP Server dependencies
+# GitHub Arwaky dependencies
 
 The following open source dependencies are used to build the [github/github-arwaky][] GitHub Model Context Protocol Server.
 

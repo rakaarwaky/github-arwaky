@@ -1,6 +1,6 @@
-# Installing GitHub MCP Server in Antigravity
+# Installing GitHub Arwaky in Antigravity
 
-This guide covers setting up the GitHub MCP Server in Google's Antigravity IDE.
+This guide covers setting up the GitHub Arwaky in Google's Antigravity IDE.
 
 ## Prerequisites
 
@@ -20,8 +20,8 @@ Uses GitHub's hosted server at `https://api.githubcopilot.com/mcp/`.
 
 1. Open Antigravity
 2. Click the "..." (Additional Options) menu in the Agent panel
-3. Select "MCP Servers"
-4. Click "Manage MCP Servers"
+3. Select "MCP Arwaky"
+4. Click "Manage MCP Arwaky"
 5. Click "View raw config"
 
 This will open your `mcp_config.json` file at:
@@ -64,12 +64,12 @@ Close and reopen Antigravity for the changes to take effect.
 
 #### Step 5: Verify Installation
 
-1. Open the MCP Servers panel (... menu → MCP Servers)
+1. Open the MCP Arwaky panel (... menu → MCP Arwaky)
 2. You should see "github" with a list of available tools
 3. You can now use GitHub tools in your conversations
 
 > [!NOTE]
-> The status indicator in the MCP Servers panel might not immediately turn green in some versions, but the tools will still function if configured correctly.
+> The status indicator in the MCP Arwaky panel might not immediately turn green in some versions, but the tools will still function if configured correctly.
 
 ### Option 2: Local Docker Server
 
@@ -115,7 +115,7 @@ Make sure you're using `serverUrl` (not `url`) for the remote server configurati
 ### Tools not working
 
 - Ensure your PAT has the correct scopes
-- Check the MCP Servers panel for error messages
+- Check the MCP Arwaky panel for error messages
 - Verify internet connection for remote server
 
 ## Available Tools

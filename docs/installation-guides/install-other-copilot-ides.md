@@ -1,12 +1,12 @@
-# Install GitHub MCP Server in Copilot IDEs
+# Install GitHub Arwaky in Copilot IDEs
 
 Quick setup guide for the GitHub MCP server in GitHub Copilot across different IDEs. For VS Code instructions, refer to the [VS Code install guide in the README](/README.md#installation-in-vs-code)
 
 ### Requirements:
 - **GitHub Copilot License**: Any Copilot plan (Free, Pro, Pro+, Business, Enterprise) for Copilot access
 - **GitHub Account**: Individual GitHub account (organization/enterprise membership optional) for GitHub MCP server access
-- **MCP Servers in Copilot Policy**: Organizations assigning Copilot seats must enable this policy for all MCP access in Copilot for VS Code and Copilot Coding Agent – all other Copilot IDEs will migrate to this policy in the coming months
-- **Editor Preview Policy**: Organizations assigning Copilot seats must enable this policy for OAuth access while the Remote GitHub MCP Server is in public preview
+- **MCP Arwaky in Copilot Policy**: Organizations assigning Copilot seats must enable this policy for all MCP access in Copilot for VS Code and Copilot Coding Agent – all other Copilot IDEs will migrate to this policy in the coming months
+- **Editor Preview Policy**: Organizations assigning Copilot seats must enable this policy for OAuth access while the Remote GitHub Arwaky is in public preview
 
 > **Note:** All Copilot IDEs now support the remote GitHub MCP server. VS Code offers OAuth authentication, while Visual Studio, JetBrains IDEs, Xcode, and Eclipse currently use PAT authentication with OAuth support coming soon.
 

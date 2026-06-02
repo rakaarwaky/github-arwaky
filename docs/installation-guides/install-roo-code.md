@@ -1,4 +1,4 @@
-# Install GitHub MCP Server in Roo Code
+# Install GitHub Arwaky in Roo Code
 
 [Roo Code](https://github.com/RooCodeInc/Roo-Code) is an AI coding assistant that runs in VS Code-compatible editors (VS Code, Cursor, Windsurf, etc.). For general setup information (prerequisites, Docker installation, security best practices), see the [Installation Guides README](./README.md).
 
@@ -7,7 +7,7 @@
 ### Step-by-step setup
 
 1. Click the **Roo Code icon** in your editor's sidebar to open the Roo Code pane
-2. Click the **gear icon** (⚙️) in the top navigation of the Roo Code pane, then click on **"MCP Servers"** icon on the left.
+2. Click the **gear icon** (⚙️) in the top navigation of the Roo Code pane, then click on **"MCP Arwaky"** icon on the left.
 3. Scroll to the bottom and click **"Edit Global MCP"** (for all projects) or **"Edit Project MCP"** (for the current project only)
 4. Add the configuration below to the opened file (`mcp_settings.json` or `.roo/mcp.json`)
 5. Replace `YOUR_GITHUB_PAT` with your [GitHub Personal Access Token](https://github.com/settings/tokens)
