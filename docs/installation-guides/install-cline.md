@@ -39,7 +39,7 @@ Replace `YOUR_GITHUB_PAT` with your [GitHub Personal Access Token](https://githu
       "args": [
         "run", "-i", "--rm",
         "-e", "GITHUB_PERSONAL_ACCESS_TOKEN",
-        "ghcr.io/github/github-arwaky"
+        "ghcr.io/rakaarwaky/github-arwaky"
       ],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT"

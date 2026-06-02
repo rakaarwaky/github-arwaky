@@ -106,7 +106,7 @@ With Docker running, you can run the GitHub MCP server in a container:
         "--rm",
         "-e",
         "GITHUB_PERSONAL_ACCESS_TOKEN",
-        "ghcr.io/github/github-arwaky"
+        "ghcr.io/rakaarwaky/github-arwaky"
       ],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
@@ -118,7 +118,7 @@ With Docker running, you can run the GitHub MCP server in a container:
 
 #### Binary
 
-You can download the latest binary release from the [GitHub releases page](https://github.com/github/github-arwaky/releases) or build it from source by running:
+You can download the latest binary release from the [GitHub releases page](https://github.com/rakaarwaky/github-arwaky/releases) or build it from source by running:
 
 ```bash
 go build -o github-arwaky ./cmd/github-arwaky

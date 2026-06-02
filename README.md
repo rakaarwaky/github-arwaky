@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/github/github-arwaky)](https://goreportcard.com/report/github.com/github/github-arwaky)
+[![Go Report Card](https://goreportcard.com/badge/github.com/rakaarwaky/github-arwaky)](https://goreportcard.com/report/github.com/rakaarwaky/github-arwaky)
 
 # GitHub Arwaky
 
@@ -20,12 +20,12 @@ Built for developers who want to connect their AI tools to GitHub context and ca
 
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Server-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=github&config=%7B%22type%22%3A%20%22http%22%2C%22url%22%3A%20%22https%3A%2F%2Fapi.githubcopilot.com%2Fmcp%2F%22%7D) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install_Server-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=github&config=%7B%22type%22%3A%20%22http%22%2C%22url%22%3A%20%22https%3A%2F%2Fapi.githubcopilot.com%2Fmcp%2F%22%7D&quality=insiders)
 
-The remote GitHub Arwaky is hosted by GitHub and provides the easiest method for getting up and running. If your MCP host does not support remote MCP servers, don't worry! You can use the [local version of the GitHub Arwaky](https://github.com/github/github-arwaky?tab=readme-ov-file#local-github-arwaky) instead.
+The remote GitHub Arwaky is hosted by GitHub and provides the easiest method for getting up and running. If your MCP host does not support remote MCP servers, don't worry! You can use the [local version of the GitHub Arwaky](https://github.com/rakaarwaky/github-arwaky?tab=readme-ov-file#local-github-arwaky) instead.
 
 ### Prerequisites
 
 1. A compatible MCP host with remote server support (VS Code 1.101+, Claude Desktop, Cursor, Windsurf, etc.)
-2. Any applicable [policies enabled](https://github.com/github/github-arwaky/blob/main/docs/policies-and-governance.md)
+2. Any applicable [policies enabled](https://github.com/rakaarwaky/github-arwaky/blob/main/docs/policies-and-governance.md)
 
 ### Install in VS Code
 
@@ -179,7 +179,7 @@ GitHub Enterprise Server does not support remote server hosting. Please refer to
 ### Prerequisites
 
 1. To run the server in a container, you will need to have [Docker](https://www.docker.com/) installed.
-2. Once Docker is installed, you will also need to ensure Docker is running. The Docker image is available at `ghcr.io/github/github-arwaky`. The image is public; if you get errors on pull, you may have an expired token and need to `docker logout ghcr.io`.
+2. Once Docker is installed, you will also need to ensure Docker is running. The Docker image is available at `ghcr.io/rakaarwaky/github-arwaky`. The image is public; if you get errors on pull, you may have an expired token and need to `docker logout ghcr.io`.
 3. Lastly you will need to [Create a GitHub Personal Access Token](https://github.com/settings/personal-access-tokens/new).
 The MCP server can use many of the GitHub APIs, so enable the permissions that you feel comfortable granting your AI tools (to learn more about access tokens, please check out the [documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)).
 
@@ -258,7 +258,7 @@ the hostname for GitHub Enterprise Server or GitHub Enterprise Cloud with data r
     "GITHUB_PERSONAL_ACCESS_TOKEN",
     "-e",
     "GITHUB_HOST",
-    "ghcr.io/github/github-arwaky"
+    "ghcr.io/rakaarwaky/github-arwaky"
     ],
     "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}",
@@ -299,7 +299,7 @@ Add the following JSON block to your IDE's MCP settings.
           "--rm",
           "-e",
           "GITHUB_PERSONAL_ACCESS_TOKEN",
-          "ghcr.io/github/github-arwaky"
+          "ghcr.io/rakaarwaky/github-arwaky"
         ],
         "env": {
           "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
@@ -335,7 +335,7 @@ Optionally, you can add a similar example (i.e. without the mcp key) to a file c
         "--rm",
         "-e",
         "GITHUB_PERSONAL_ACCESS_TOKEN",
-        "ghcr.io/github/github-arwaky"
+        "ghcr.io/rakaarwaky/github-arwaky"
       ],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
@@ -390,7 +390,7 @@ The `github-arwaky` binary includes a few CLI subcommands that are helpful for d
 - `github-arwaky tool-search "<query>"` searches tools by name, description, and input parameter names. Use `--max-results` to return more matches.
 Example (color output requires a TTY; use `docker run -t` (or `-it`) when running in Docker):
 ```bash
-docker run -it --rm ghcr.io/github/github-arwaky tool-search "issue" --max-results 5
+docker run -it --rm ghcr.io/rakaarwaky/github-arwaky tool-search "issue" --max-results 5
 github-arwaky tool-search "issue" --max-results 5
 ```
 
@@ -469,7 +469,7 @@ When using Docker, you can pass the toolsets as environment variables:
 docker run -i --rm \
   -e GITHUB_PERSONAL_ACCESS_TOKEN=<your-token> \
   -e GITHUB_TOOLSETS="repos,issues,pull_requests,actions,code_security" \
-  ghcr.io/github/github-arwaky
+  ghcr.io/rakaarwaky/github-arwaky
 ```
 
 ### Using Tools With Docker
@@ -481,14 +481,14 @@ When using Docker, you can pass specific tools as environment variables. You can
 docker run -i --rm \
   -e GITHUB_PERSONAL_ACCESS_TOKEN=<your-token> \
   -e GITHUB_TOOLS="get_file_contents,issue_read,create_pull_request" \
-  ghcr.io/github/github-arwaky
+  ghcr.io/rakaarwaky/github-arwaky
 
 # Tools combined with toolsets (additive)
 docker run -i --rm \
   -e GITHUB_PERSONAL_ACCESS_TOKEN=<your-token> \
   -e GITHUB_TOOLSETS="repos,issues" \
   -e GITHUB_TOOLS="get_gist" \
-  ghcr.io/github/github-arwaky
+  ghcr.io/rakaarwaky/github-arwaky
 ```
 
 ### Special toolsets
@@ -547,7 +547,7 @@ When using Docker:
 docker run -i --rm \
   -e GITHUB_PERSONAL_ACCESS_TOKEN=<your-token> \
   -e GITHUB_INSIDERS=true \
-  ghcr.io/github/github-arwaky
+  ghcr.io/rakaarwaky/github-arwaky
 ```
 
 ### Available Toolsets
@@ -1273,7 +1273,7 @@ The following sets of tools are available:
   - `order`: Sort order for results (string, optional)
   - `page`: Page number for pagination (min 1) (number, optional)
   - `perPage`: Results per page for pagination (min 1, max 100) (number, optional)
-  - `query`: Search query using GitHub's powerful code search syntax. Examples: 'content:Skill language:Java org:github', 'NOT is:archived language:Python OR language:go', 'repo:github/github-arwaky'. Supports exact matching, language filters, path filters, and more. (string, required)
+  - `query`: Search query using GitHub's powerful code search syntax. Examples: 'content:Skill language:Java org:github', 'NOT is:archived language:Python OR language:go', 'repo:rakaarwaky/github-arwaky'. Supports exact matching, language filters, path filters, and more. (string, required)
   - `sort`: Sort field ('indexed' only) (string, optional)
 
 - **search_repositories** - Search repositories
@@ -1447,7 +1447,7 @@ When using Docker, you can pass the toolsets as environment variables:
 docker run -i --rm \
   -e GITHUB_PERSONAL_ACCESS_TOKEN=<your-token> \
   -e GITHUB_DYNAMIC_TOOLSETS=1 \
-  ghcr.io/github/github-arwaky
+  ghcr.io/rakaarwaky/github-arwaky
 ```
 
 ## Read-Only Mode
@@ -1464,7 +1464,7 @@ When using Docker, you can pass the read-only mode as an environment variable:
 docker run -i --rm \
   -e GITHUB_PERSONAL_ACCESS_TOKEN=<your-token> \
   -e GITHUB_READ_ONLY=1 \
-  ghcr.io/github/github-arwaky
+  ghcr.io/rakaarwaky/github-arwaky
 ```
 
 ## Lockdown Mode
@@ -1481,7 +1481,7 @@ When running with Docker, set the corresponding environment variable:
 docker run -i --rm \
   -e GITHUB_PERSONAL_ACCESS_TOKEN=<your-token> \
   -e GITHUB_LOCKDOWN_MODE=1 \
-  ghcr.io/github/github-arwaky
+  ghcr.io/rakaarwaky/github-arwaky
 ```
 
 The behavior of lockdown mode depends on the tool invoked.

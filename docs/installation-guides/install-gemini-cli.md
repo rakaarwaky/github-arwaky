@@ -34,7 +34,7 @@ After securely storing your PAT, you can add the GitHub MCP server configuration
 
 The simplest way is to use GitHub's hosted MCP server via our gemini extension.
 
-`gemini extensions install https://github.com/github/github-arwaky`
+`gemini extensions install https://github.com/rakaarwaky/github-arwaky`
 
 > [!NOTE]
 > You will still need to have a personal access token with the appropriate scopes called `GITHUB_MCP_PAT` in your environment.
@@ -73,7 +73,7 @@ With docker running, you can run the GitHub MCP server in a container:
                 "--rm",
                 "-e",
                 "GITHUB_PERSONAL_ACCESS_TOKEN",
-                "ghcr.io/github/github-arwaky"
+                "ghcr.io/rakaarwaky/github-arwaky"
             ],
             "env": {
                 "GITHUB_PERSONAL_ACCESS_TOKEN": "$GITHUB_MCP_PAT"
@@ -85,7 +85,7 @@ With docker running, you can run the GitHub MCP server in a container:
 
 ### Method 4: Binary
 
-You can download the latest binary release from the [GitHub releases page](https://github.com/github/github-arwaky/releases) or build it from source by running `go build -o github-arwaky ./cmd/github-arwaky`.
+You can download the latest binary release from the [GitHub releases page](https://github.com/rakaarwaky/github-arwaky/releases) or build it from source by running `go build -o github-arwaky ./cmd/github-arwaky`.
 
 Then, replacing `/path/to/binary` with the actual path to your binary, configure Gemini CLI with:
 

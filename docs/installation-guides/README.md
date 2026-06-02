@@ -64,7 +64,7 @@ The GitHub Arwaky can be installed using several methods. **Docker is the most p
 
 ### Important Notes on the GitHub Arwaky
 
-- **Docker Image**: The official Docker image is now `ghcr.io/github/github-arwaky`
+- **Docker Image**: The official Docker image is now `ghcr.io/rakaarwaky/github-arwaky`
 - **npm Package**: The npm package @modelcontextprotocol/server-github is no longer supported as of April 2025
 - **Remote Server**: The remote server URL is `https://api.githubcopilot.com/mcp/`
 

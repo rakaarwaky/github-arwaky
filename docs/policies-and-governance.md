@@ -47,7 +47,7 @@ The GitHub Arwaky provides access to GitHub resources and capabilities through a
 * **Token Storage:** Tokens should be stored securely using platform-appropriate credential storage
 * **Audit Trail:** All underlying API calls are logged in GitHub's audit log when available
 
-For integration architecture and implementation details, see the [Host Integration Guide](https://github.com/github/github-arwaky/blob/main/docs/host-integration.md).
+For integration architecture and implementation details, see the [Host Integration Guide](https://github.com/rakaarwaky/github-arwaky/blob/main/docs/host-integration.md).
 
 ## Where It's Used
 
@@ -211,6 +211,6 @@ Until those arrive, teams can continue to monitor MCP activity through existing 
 
 **Questions or Feedback?**
 
-Open an [issue in the github-arwaky repository](https://github.com/github/github-arwaky/issues) with the label "policies & governance" attached.
+Open an [issue in the github-arwaky repository](https://github.com/rakaarwaky/github-arwaky/issues) with the label "policies & governance" attached.
 
 This document reflects GitHub Arwaky policies as of July 2025. Policies and capabilities continue to evolve based on customer feedback and security best practices.

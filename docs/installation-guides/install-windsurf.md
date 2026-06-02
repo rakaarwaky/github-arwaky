@@ -28,7 +28,7 @@ Windsurf supports Streamable HTTP servers with a `serverUrl` field:
 ## Local Server Setup
 
 ### Docker Installation (Required)
-**Important**: The npm package `@modelcontextprotocol/server-github` is no longer supported as of April 2025. Use the official Docker image `ghcr.io/github/github-arwaky` instead.
+**Important**: The npm package `@modelcontextprotocol/server-github` is no longer supported as of April 2025. Use the official Docker image `ghcr.io/rakaarwaky/github-arwaky` instead.
 
 ```json
 {
@@ -41,7 +41,7 @@ Windsurf supports Streamable HTTP servers with a `serverUrl` field:
         "--rm",
         "-e",
         "GITHUB_PERSONAL_ACCESS_TOKEN",
-        "ghcr.io/github/github-arwaky"
+        "ghcr.io/rakaarwaky/github-arwaky"
       ],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT"
@@ -100,8 +100,8 @@ After installation:
 
 ## Important Notes
 
-- **Official repository**: [github/github-arwaky](https://github.com/github/github-arwaky)
+- **Official repository**: [rakaarwaky/github-arwaky](https://github.com/rakaarwaky/github-arwaky)
 - **Remote server URL**: `https://api.githubcopilot.com/mcp/`
-- **Docker image**: `ghcr.io/github/github-arwaky` (official and supported)
+- **Docker image**: `ghcr.io/rakaarwaky/github-arwaky` (official and supported)
 - **npm package**: `@modelcontextprotocol/server-github` (deprecated as of April 2025 - no longer functional)
 - **Windsurf limitations**: No environment variable interpolation, global config only
