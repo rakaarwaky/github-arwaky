@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "github": {
-      "command": "/home/raka/mcp-servers/github-mcp-server/github-mcp-server",
+      "command": "/home/raka/mcp-arwaky/github-arwaky/github-arwaky",
       "args": [
         "stdio",
         "--tools",

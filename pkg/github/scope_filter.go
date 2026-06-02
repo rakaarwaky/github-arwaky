@@ -3,8 +3,8 @@ package github
 import (
 	"context"
 
-	"github.com/github/github-mcp-server/pkg/inventory"
-	"github.com/github/github-mcp-server/pkg/scopes"
+	"github.com/rakaarwaky/github-arwaky/pkg/inventory"
+	"github.com/rakaarwaky/github-arwaky/pkg/scopes"
 )
 
 // repoScopesSet contains scopes that grant access to repository content.

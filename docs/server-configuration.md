@@ -64,7 +64,7 @@ The examples below use VS Code configuration format to illustrate the concepts. 
   "command": "go",
   "args": [
     "run",
-    "./cmd/github-mcp-server",
+    "./cmd/github-arwaky",
     "stdio",
     "--tools=get_file_contents,get_me,pull_request_read"
   ],
@@ -108,7 +108,7 @@ The examples below use VS Code configuration format to illustrate the concepts. 
   "command": "go",
   "args": [
     "run",
-    "./cmd/github-mcp-server",
+    "./cmd/github-arwaky",
     "stdio",
     "--toolsets=issues,pull_requests"
   ],
@@ -155,7 +155,7 @@ Enable entire toolsets, then add individual tools from toolsets you don't want f
   "command": "go",
   "args": [
     "run",
-    "./cmd/github-mcp-server",
+    "./cmd/github-arwaky",
     "stdio",
     "--toolsets=repos,issues",
     "--tools=get_gist,pull_request_read"
@@ -205,7 +205,7 @@ Listed tools are removed regardless of any other configuration — even if their
   "command": "go",
   "args": [
     "run",
-    "./cmd/github-mcp-server",
+    "./cmd/github-arwaky",
     "stdio",
     "--toolsets=pull_requests",
     "--exclude-tools=create_pull_request,merge_pull_request"
@@ -266,7 +266,7 @@ When active, this mode will disable all tools that are not read-only even if the
   "command": "go",
   "args": [
     "run",
-    "./cmd/github-mcp-server",
+    "./cmd/github-arwaky",
     "stdio",
     "--toolsets=issues,repos,pull_requests",
     "--read-only"
@@ -302,7 +302,7 @@ Starts with only discovery tools (`enable_toolset`, `list_available_toolsets`, `
   "command": "go",
   "args": [
     "run",
-    "./cmd/github-mcp-server",
+    "./cmd/github-arwaky",
     "stdio",
     "--dynamic-toolsets"
   ],
@@ -319,7 +319,7 @@ Starts with only discovery tools (`enable_toolset`, `list_available_toolsets`, `
   "command": "go",
   "args": [
     "run",
-    "./cmd/github-mcp-server",
+    "./cmd/github-arwaky",
     "stdio",
     "--dynamic-toolsets",
     "--tools=get_me,search_code"
@@ -369,7 +369,7 @@ Lockdown mode ensures the server only surfaces content in public repositories fr
   "command": "go",
   "args": [
     "run",
-    "./cmd/github-mcp-server",
+    "./cmd/github-arwaky",
     "stdio",
     "--lockdown-mode"
   ],
@@ -424,7 +424,7 @@ Insiders Mode unlocks experimental features, such as [MCP Apps](./insiders-featu
   "command": "go",
   "args": [
     "run",
-    "./cmd/github-mcp-server",
+    "./cmd/github-arwaky",
     "stdio",
     "--insiders"
   ],

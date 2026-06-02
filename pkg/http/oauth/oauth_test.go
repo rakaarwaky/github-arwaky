@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/github/github-mcp-server/pkg/http/headers"
-	"github.com/github/github-mcp-server/pkg/utils"
+	"github.com/rakaarwaky/github-arwaky/pkg/http/headers"
+	"github.com/rakaarwaky/github-arwaky/pkg/utils"
 	"github.com/go-chi/chi/v5"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

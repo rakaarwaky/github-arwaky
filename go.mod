@@ -1,4 +1,4 @@
-module github.com/github/github-mcp-server
+module github.com/rakaarwaky/github-arwaky
 
 go 1.24.0
 

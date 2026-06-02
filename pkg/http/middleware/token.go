@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/http"
 
-	ghcontext "github.com/github/github-mcp-server/pkg/context"
-	"github.com/github/github-mcp-server/pkg/http/oauth"
-	"github.com/github/github-mcp-server/pkg/utils"
+	ghcontext "github.com/rakaarwaky/github-arwaky/pkg/context"
+	"github.com/rakaarwaky/github-arwaky/pkg/http/oauth"
+	"github.com/rakaarwaky/github-arwaky/pkg/utils"
 )
 
 func ExtractUserToken(oauthCfg *oauth.Config) func(next http.Handler) http.Handler {

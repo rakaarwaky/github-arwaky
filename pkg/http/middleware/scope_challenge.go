@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"strings"
 
-	ghcontext "github.com/github/github-mcp-server/pkg/context"
-	"github.com/github/github-mcp-server/pkg/http/oauth"
-	"github.com/github/github-mcp-server/pkg/scopes"
-	"github.com/github/github-mcp-server/pkg/utils"
+	ghcontext "github.com/rakaarwaky/github-arwaky/pkg/context"
+	"github.com/rakaarwaky/github-arwaky/pkg/http/oauth"
+	"github.com/rakaarwaky/github-arwaky/pkg/scopes"
+	"github.com/rakaarwaky/github-arwaky/pkg/utils"
 )
 
 // WithScopeChallenge creates a new middleware that determines if an OAuth request contains sufficient scopes to

@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/github/github-mcp-server/pkg/lockdown"
-	"github.com/github/github-mcp-server/pkg/raw"
-	"github.com/github/github-mcp-server/pkg/translations"
+	"github.com/rakaarwaky/github-arwaky/pkg/lockdown"
+	"github.com/rakaarwaky/github-arwaky/pkg/raw"
+	"github.com/rakaarwaky/github-arwaky/pkg/translations"
 	gogithub "github.com/google/go-github/v82/github"
 	"github.com/shurcooL/githubv4"
 	"github.com/stretchr/testify/assert"

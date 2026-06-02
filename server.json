@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.github/github-mcp-server",
+  "name": "io.github.github/github-arwaky",
   "description": "Connect AI assistants to GitHub - manage repos, issues, PRs, and workflows through natural language.",
   "title": "GitHub",
   "repository": {
-    "url": "https://github.com/github/github-mcp-server",
+    "url": "https://github.com/github/github-arwaky",
     "source": "github"
   },
   "version": "${VERSION}",
   "packages": [
     {
       "registryType": "oci",
-      "identifier": "ghcr.io/github/github-mcp-server:${VERSION}",
+      "identifier": "ghcr.io/github/github-arwaky:${VERSION}",
       "transport": {
         "type": "stdio"
       },

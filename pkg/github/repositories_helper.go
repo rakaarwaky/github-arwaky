@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"strings"
 
-	ghErrors "github.com/github/github-mcp-server/pkg/errors"
-	"github.com/github/github-mcp-server/pkg/raw"
-	"github.com/github/github-mcp-server/pkg/utils"
+	ghErrors "github.com/rakaarwaky/github-arwaky/pkg/errors"
+	"github.com/rakaarwaky/github-arwaky/pkg/raw"
+	"github.com/rakaarwaky/github-arwaky/pkg/utils"
 	"github.com/google/go-github/v82/github"
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 )

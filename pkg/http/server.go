@@ -12,14 +12,14 @@ import (
 	"syscall"
 	"time"
 
-	ghcontext "github.com/github/github-mcp-server/pkg/context"
-	"github.com/github/github-mcp-server/pkg/github"
-	"github.com/github/github-mcp-server/pkg/http/oauth"
-	"github.com/github/github-mcp-server/pkg/inventory"
-	"github.com/github/github-mcp-server/pkg/lockdown"
-	"github.com/github/github-mcp-server/pkg/scopes"
-	"github.com/github/github-mcp-server/pkg/translations"
-	"github.com/github/github-mcp-server/pkg/utils"
+	ghcontext "github.com/rakaarwaky/github-arwaky/pkg/context"
+	"github.com/rakaarwaky/github-arwaky/pkg/github"
+	"github.com/rakaarwaky/github-arwaky/pkg/http/oauth"
+	"github.com/rakaarwaky/github-arwaky/pkg/inventory"
+	"github.com/rakaarwaky/github-arwaky/pkg/lockdown"
+	"github.com/rakaarwaky/github-arwaky/pkg/scopes"
+	"github.com/rakaarwaky/github-arwaky/pkg/translations"
+	"github.com/rakaarwaky/github-arwaky/pkg/utils"
 	"github.com/go-chi/chi/v5"
 )
 
@@ -46,7 +46,7 @@ type ServerConfig struct {
 	ResourcePath string
 
 	// ExportTranslations indicates if we should export translations
-	// See: https://github.com/github/github-mcp-server?tab=readme-ov-file#i18n--overriding-descriptions
+	// See: https://github.com/rakaarwaky/github-arwaky?tab=readme-ov-file#i18n--overriding-descriptions
 	ExportTranslations bool
 
 	// EnableCommandLogging indicates if we should log commands

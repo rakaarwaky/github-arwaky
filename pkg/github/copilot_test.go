@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/github/github-mcp-server/internal/githubv4mock"
-	"github.com/github/github-mcp-server/internal/toolsnaps"
-	"github.com/github/github-mcp-server/pkg/translations"
+	"github.com/rakaarwaky/github-arwaky/internal/githubv4mock"
+	"github.com/rakaarwaky/github-arwaky/internal/toolsnaps"
+	"github.com/rakaarwaky/github-arwaky/pkg/translations"
 	"github.com/google/go-github/v82/github"
 	"github.com/google/jsonschema-go/jsonschema"
 	"github.com/shurcooL/githubv4"

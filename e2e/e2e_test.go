@@ -15,9 +15,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/github/github-mcp-server/internal/ghmcp"
-	"github.com/github/github-mcp-server/pkg/github"
-	"github.com/github/github-mcp-server/pkg/translations"
+	"github.com/rakaarwaky/github-arwaky/internal/ghmcp"
+	"github.com/rakaarwaky/github-arwaky/pkg/github"
+	"github.com/rakaarwaky/github-arwaky/pkg/translations"
 	gogithub "github.com/google/go-github/v82/github"
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 	"github.com/stretchr/testify/require"

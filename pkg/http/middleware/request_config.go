@@ -5,8 +5,8 @@ import (
 	"slices"
 	"strings"
 
-	ghcontext "github.com/github/github-mcp-server/pkg/context"
-	"github.com/github/github-mcp-server/pkg/http/headers"
+	ghcontext "github.com/rakaarwaky/github-arwaky/pkg/context"
+	"github.com/rakaarwaky/github-arwaky/pkg/http/headers"
 )
 
 // WithRequestConfig is a middleware that extracts MCP-related headers and sets them in the request context.

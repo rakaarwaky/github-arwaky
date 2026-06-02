@@ -1,8 +1,8 @@
 package github
 
 import (
-	"github.com/github/github-mcp-server/pkg/inventory"
-	"github.com/github/github-mcp-server/pkg/translations"
+	"github.com/rakaarwaky/github-arwaky/pkg/inventory"
+	"github.com/rakaarwaky/github-arwaky/pkg/translations"
 )
 
 // AllPrompts returns all prompts with their embedded toolset metadata.

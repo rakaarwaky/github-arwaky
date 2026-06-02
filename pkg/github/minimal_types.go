@@ -5,7 +5,7 @@ import (
 
 	"github.com/google/go-github/v82/github"
 
-	"github.com/github/github-mcp-server/pkg/sanitize"
+	"github.com/rakaarwaky/github-arwaky/pkg/sanitize"
 )
 
 // MinimalUser is the output type for user and organization search results.

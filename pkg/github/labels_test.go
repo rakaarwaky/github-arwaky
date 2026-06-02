@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/github/github-mcp-server/internal/githubv4mock"
-	"github.com/github/github-mcp-server/internal/toolsnaps"
-	"github.com/github/github-mcp-server/pkg/translations"
+	"github.com/rakaarwaky/github-arwaky/internal/githubv4mock"
+	"github.com/rakaarwaky/github-arwaky/internal/toolsnaps"
+	"github.com/rakaarwaky/github-arwaky/pkg/translations"
 	"github.com/shurcooL/githubv4"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

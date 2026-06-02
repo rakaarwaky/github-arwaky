@@ -13,13 +13,13 @@ import (
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 	"github.com/shurcooL/githubv4"
 
-	ghErrors "github.com/github/github-mcp-server/pkg/errors"
-	"github.com/github/github-mcp-server/pkg/inventory"
-	"github.com/github/github-mcp-server/pkg/octicons"
-	"github.com/github/github-mcp-server/pkg/sanitize"
-	"github.com/github/github-mcp-server/pkg/scopes"
-	"github.com/github/github-mcp-server/pkg/translations"
-	"github.com/github/github-mcp-server/pkg/utils"
+	ghErrors "github.com/rakaarwaky/github-arwaky/pkg/errors"
+	"github.com/rakaarwaky/github-arwaky/pkg/inventory"
+	"github.com/rakaarwaky/github-arwaky/pkg/octicons"
+	"github.com/rakaarwaky/github-arwaky/pkg/sanitize"
+	"github.com/rakaarwaky/github-arwaky/pkg/scopes"
+	"github.com/rakaarwaky/github-arwaky/pkg/translations"
+	"github.com/rakaarwaky/github-arwaky/pkg/utils"
 )
 
 // PullRequestRead creates a tool to get details of a specific pull request.

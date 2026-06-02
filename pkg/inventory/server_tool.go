@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/github/github-mcp-server/pkg/octicons"
+	"github.com/rakaarwaky/github-arwaky/pkg/octicons"
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 )
 

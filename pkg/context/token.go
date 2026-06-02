@@ -3,7 +3,7 @@ package context
 import (
 	"context"
 
-	"github.com/github/github-mcp-server/pkg/utils"
+	"github.com/rakaarwaky/github-arwaky/pkg/utils"
 )
 
 type tokenCtxKey struct{}

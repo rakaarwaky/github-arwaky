@@ -3,7 +3,7 @@ package github
 import (
 	"context"
 
-	ghcontext "github.com/github/github-mcp-server/pkg/context"
+	ghcontext "github.com/rakaarwaky/github-arwaky/pkg/context"
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 )
 

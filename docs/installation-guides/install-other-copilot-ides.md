@@ -57,7 +57,7 @@ For users who prefer to run the GitHub MCP server locally. Requires Docker insta
       "command": "docker",
       "args": [
         "run", "-i", "--rm", "-e", "GITHUB_PERSONAL_ACCESS_TOKEN",
-        "ghcr.io/github/github-mcp-server"
+        "ghcr.io/github/github-arwaky"
       ],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_pat}"
@@ -70,7 +70,7 @@ For users who prefer to run the GitHub MCP server locally. Requires Docker insta
 4. In the GitHub Copilot Chat window, switch to Agent mode.
 5. Activate the tool picker in the Chat window and enable one or more tools from the "github" MCP server.
 
-**Documentation:** [Visual Studio MCP Guide](https://learn.microsoft.com/visualstudio/ide/mcp-servers)
+**Documentation:** [Visual Studio MCP Guide](https://learn.microsoft.com/visualstudio/ide/mcp-arwaky)
 
 ---
 
@@ -117,7 +117,7 @@ For users who prefer to run the GitHub MCP server locally. Requires Docker insta
       "args": [
         "run", "-i", "--rm", 
         "-e", "GITHUB_PERSONAL_ACCESS_TOKEN",
-        "ghcr.io/github/github-mcp-server"
+        "ghcr.io/github/github-arwaky"
       ],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT"
@@ -173,7 +173,7 @@ For users who prefer to run the GitHub MCP server locally. Requires Docker insta
       "args": [
         "run", "-i", "--rm", 
         "-e", "GITHUB_PERSONAL_ACCESS_TOKEN",
-        "ghcr.io/github/github-mcp-server"
+        "ghcr.io/github/github-arwaky"
       ],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT"
@@ -230,7 +230,7 @@ For users who prefer to run the GitHub MCP server locally. Requires Docker insta
       "args": [
         "run", "-i", "--rm", 
         "-e", "GITHUB_PERSONAL_ACCESS_TOKEN",
-        "ghcr.io/github/github-mcp-server"
+        "ghcr.io/github/github-arwaky"
       ],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT"
