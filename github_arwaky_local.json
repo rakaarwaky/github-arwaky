@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "/home/raka/mcp-arwaky/github-arwaky/dist/github-mcp-server"
+    }
+  }
+}
